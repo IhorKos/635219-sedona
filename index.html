@@ -5,6 +5,114 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+  	<header class="main-header">
+  		<nav class="main-navigation">
+  		  <a class="main-navigation-logo">
+  			<img src="img/index-logo.svg " width="100" height="100" alt="Логотип Седоны">
+  		  </a>
+  		  <ul class="site-navigation">
+  			  <li> <a href="info.html"> информация</a></li>
+  			  <li> <a href="photo_and_video.html"> фото и видео</a></li>
+  			  <li> <a href="map.html"> карта штата</a></li>
+  			  <li> <a href="hotels.html"> гостиницы</a></li>	
+  		  </ul>
+  		 </nav>
+  	</header>
+
+  	<main class="container">
+  		<div class="background-image"></div> <!--Горы!-->
+  		<span class="banner-text1">welcome</span>  
+  		<span class="banner-text2">to the gardeous</span>
+  		<h1> SEDONA </h1>
+  		<span class="banner-text3">"Because the Grand Canyon sucks!"</span>
+  		<h2> Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+
+  		<section class="features"> 
+  		  <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньйон!</p>
+  		  <ol class="features-list"> <!-- не знаю, правильно упорадоченный или неупорадоченный список делать -->
+  		  	<li class="features-item"> 
+  		  	    <h2> Настоящий городок </h2>
+  		  		<span> №1 </span>
+  		  		<p> Седона - не аттракцион для туристов, там течет своя жизнь</p>
+  		  		<img src="img/real_town.jpg" alt="настоящий городок">
+  		  	    <ul>
+  		  	  	   <li> 
+  		  	  	       <h3> жилье </h3> <!--визуально заголовок такой же как и Н2, но по логике должен быть уровнем ниже, хотя , может это вообще не заголовок... !-->
+  		  	  	       <p> рекомедуем пожить в настоящем мотеле, все ка в кино! </p>
+  		  	  	   </li>
+  		  	  	   <li>
+  		  	  	       <h3> еда </h3>
+  		  	  	       <p> всегда заказывайте фирменный бургер, Вы не разочаруетесь! </p>
+  		  	  	   </li>
+  		  	  	   <li>
+  		  	  	       <h3> сувениры </h3>
+  		  	  	       <p> не только китайского, но и местного производства! </p> 
+  		  	  	   </li>
+  		  	    </ul>
+  		  	</li>
+  		  	<li class="features-item"> 
+  		  		<h2>Там есть Мост Дьявола</h2> 
+  		  		<span> №2 </span>
+  		  		<p> Да, по нему можно пройти! Если конечно вы осмелитесь </p>
+  		  		<img src="img/devil_bridge.jpg" alt="Мост Дьявола"> 
+  		  	</li>
+  		  	<li class="features-item">
+  		  	    <h2>Небольшая площадь</h2>
+  		  	    <span>№3</span>
+  		  	    <p> все достопримечательности находятся очень близко </p>  
+  		  	</li>
+  		  	<li class="features-item">
+  		  	    <h2>Красивая дорога </h2>
+  		  	    <span>№4</span>
+  		  	    <p> ехать в Седону из Лас-Вегаса совсем не скучно! </p> 
+  		  	</li>
+  		  	<li class="features-item">
+  		  	    <h2>Мало туристов</h2>
+  		  	    <span>№5</span>
+  		  	    <p> большинство едет в Гранд Каньйон и толпится там </p>  
+  		  	</li>
+  		  </ol>
+  		</section>
+
+  		<section class="hotel-search"> 
+  			<span><b> заинтересовались? </b></span> <!-- не уверен !-->
+  		    <p> укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне </p>
+  		    <form class="hotel-form"> <!-- здесь будет форма, лектор сказал, что формы будем верстать после 4й лекции, поэтому этому блоку особо никакого внимания не уделял !-->
+  		    	<h2> поиск гостиницы в Седоне </h2>
+  		    	<span> дата заезда
+  		    		<span> 24 апреля 2017 </span>
+  		    		<br>
+  		    	</span>
+  		    	<span> дата выезда
+  		    		<span> 4 июля 2017 </span>
+  		    		<br>
+  		    	</span>
+  		    	<span> взрослые
+  		    		<span> 2 </span>
+  		    	</span>
+  		    	<span> дети
+  		    		<span> 0 </span>
+  		    	</span>
+  		    	<br><br>
+  		    	<input type="submit" value="найти"> <!-- не уверен, кнопка это или ссылка !-->
+  		    </form>
+  		    <span class="map"> <!-- Карта !-->
+  		    </span>
+  		</section>	
+  	</main>
+
+  	<footer class="footer">
+  		<a class="footer-hashtag" href="#visitsedona"> #visitsedona </a>
+  		<ul class="social-links-list">
+            <li><a class="social-links-item" href="#twitter">twitter</a></li>
+            <li><a class="social-links-item" href="#facebook">facebook</a></li>
+            <li><a class="social-links-item" href="#youtube">youtube</a></li>
+        </ul>
+        <a class="developer" href="https://htmlacademy.ru/">
+          website by <img src="img/footer-logo.svg">
+        </a>
+
+  	</footer>
 
     <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
 
