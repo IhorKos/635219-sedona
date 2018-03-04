@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+  	<header class="main-header">
+  		<nav class="main-navigation">
+  		  <a class="main-navigation-logo" href="index.html">
+  			<img src="img/index-logo.svg " width="100" height="100" alt="Логотип Седоны">
+  		  </a>
+  		  <ul class="site-navigation">
+  			  <li> <a href="info.html"> информация</a></li>
+  			  <li> <a href="photo_and_video.html"> фото и видео</a></li>
+  			  <li> <a href="map.html"> карта штата</a></li>
+  			  <li> <a href="hotels.html"> гостиницы</a></li>	
+  		  </ul>
+  		 </nav>
+  	</header>
+
+    <main class="container">
+      <section class="hotel-filter">
+        <!--возможно здесь нужно добавить скрытый заголовок "Фильтр"?-->
+        <div class="background-image-2"></div> <!--фон для блока фильтра!-->
+        <ul class="infrastructure-list">
+          <li class="infrastructure-item checkbox">бассейн</li>
+          <li class="infrastructure-item checkbox">парковка</li>
+          <li class="infrastructure-item checkbox">WI-FI</li>
+        </ul>
+        <ul class="accommodation-list">
+          <li class="accommodation-item checkbox">гостиница </li>
+          <li class="accommodation-item checkbox">мотель</li>
+          <li class="accommodation-item checkbox">апартаменты</li>
+        </ul>
+        <div class="price filter">
+          <b>стоимость в сутки (Р):</b>
+          <input type="number" name="from" value="от 0"> 
+          <input type="number" name="to" value="до 3000">
+          <span> <!--ползунок!--> </span>
+          <span class="price-button">показать</span>
+        </div>
+      </section>
+
+      <section class="sorting">
+        <!--возможно здесь нужно добавить скрытый заголовок "Сортировка жилья"?-->
+        <p>найдено:3</p>
+        <ul class="sorting-list">сортировка:</p>
+        <li class="sorting-item">по цене</li>
+        <li class="sorting-item">по типу</li>
+        <li class="sorting-item">по рейтингу</li>
+        </ul> 
+        <span class="sorting-switch"></span> <!--переключатель от большего к меньшему и наоборот!-->
+      </section>
+
+      <section class="hotel-cards">
+        <!--возможно здесь нужно добавить скрытый заголовок "Карточки отелей"?-->
+        <div>
+          <img src="amara.jpg" alt="Amara Resort & SPA">
+          <p class="hotel-name">Amara Resort & SPA</p> <!--почему "&" подсвечивается красным?!-->
+          <span class="hotel-type">гостинница </span>
+          <span class="hotel-price">от 4000 Р. </span>
+          <a href="#amara.html" class="info-button">подробнее</a>
+          <span class="reserv-button">забронировать</span>
+          <span class="stars"></span>  <!--звезды рейтинга!-->
+          <span class="hotel-raiting">рейтинг: 8,5</span>
+        </div>
+        <div>
+          <img src="Desert.jpg" alt="Desert Quail INN">
+          <p class="hotel-name">Desert Quail INN </p>
+          <span class="hotel-type">мотель </span>
+          <span class="hotel-price">от 3000 Р. </span>
+          <a href="#Desert.html" class="info-button">подробнее</a>
+          <span class="reserv-button">забронировать</span>
+          <span class="stars"></span> <!--звезды рейтинга!-->
+          <span class="hotel-raiting">рейтинг: 8,9</span>
+        </div>
+        <div>
+          <img src="villas.jpg" alt="Villas at Poco Diablo">
+          <p class="hotel-name">Villas at Poco Diablo</p>
+          <span class="hotel-type">апартаменты </span>
+          <span class="hotel-price">от 2000 Р. </span>
+          <a href="#villas.html" class="info-button">подробнее</a>
+          <span class="reserv-button">забронировать</span>
+          <span class="stars"></span> <!--звезды рейтинга!-->
+          <span class="hotel-raiting">рейтинг: 9,2</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="footer-hashtag" href="#visitsedona"> #visitsedona </a>
+      <ul class="footer-social">
+          <li><a class="social-button" href="#twitter">twitter</a></li>
+          <li><a class="social-button" href="#facebook">facebook</a></li>
+          <li><a class="social-button" href="#youtube">youtube</a></li>
+        </ul>
+        <a class="developer" href="https://htmlacademy.ru/">
+          website by <img src="img/footer-logo.svg" alt="htmlacademy">
+        </a>
+
+    </footer>
