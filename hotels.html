@@ -21,17 +21,28 @@
 
     <main class="container">
       <section class="hotel-filter">
-        <!--возможно здесь нужно добавить скрытый заголовок "Фильтр"?-->
         <div class="background-image-2"></div> <!--фон для блока фильтра!-->
         <ul class="infrastructure-list">
-          <li class="infrastructure-item checkbox">бассейн</li>
-          <li class="infrastructure-item checkbox">парковка</li>
-          <li class="infrastructure-item checkbox">WI-FI</li>
+          <li class="infrastructure-item">
+            <input type="checkbox" name="pool" id="pool-check" checked>бассейн
+          </li>
+          <li class="infrastructure-item">
+            <input type="checkbox" name="parking-place" id="parking-place-check" >парковка
+          </li>
+          <li class="infrastructure-item">
+            <input type="checkbox" name="WI-FI" id="WI-FI-check" >WI-FI
+          </li>
         </ul>
         <ul class="accommodation-list">
-          <li class="accommodation-item checkbox">гостиница </li>
-          <li class="accommodation-item checkbox">мотель</li>
-          <li class="accommodation-item checkbox">апартаменты</li>
+          <li class="accommodation-item">
+            <input type="checkbox" name="hotel" id="hotel-check" checked>гостиница 
+          </li>
+          <li class="accommodation-item">
+            <input type="checkbox" name="motel" id="motel-check" checked>мотель
+          </li>
+          <li class="accommodation-item">
+            <input type="checkbox" name="apartments" id="apartments-check" checked>апартаменты
+          </li>
         </ul>
         <div class="price filter">
           <b>стоимость в сутки (Р):</b>
@@ -54,36 +65,51 @@
       </section>
 
       <section class="hotel-cards">
-        <!--возможно здесь нужно добавить скрытый заголовок "Карточки отелей"?-->
         <div>
-          <img src="amara.jpg" alt="Amara Resort & SPA">
-          <p class="hotel-name">Amara Resort & SPA</p> <!--почему "&" подсвечивается красным?!-->
-          <span class="hotel-type">гостинница </span>
-          <span class="hotel-price">от 4000 Р. </span>
-          <a href="#amara.html" class="info-button">подробнее</a>
-          <span class="reserv-button">забронировать</span>
-          <span class="stars"></span>  <!--звезды рейтинга!-->
-          <span class="hotel-raiting">рейтинг: 8,5</span>
+          <div>
+            <div><img src="Desert.jpg" width="100" height="100" alt="Desert Quail INN"></div>
+            <div><p class="hotel-name">Amara Resort & SPA</p>
+             <span class="hotel-type">гостинница </span>
+             <span class="hotel-price">от 4000 Р. </span>
+             <a href="#amara.html" class="info-button">подробнее</a>
+             <span class="reserv-button">забронировать</span> 
+            </div>
+          </div>
+          <div>
+            <span class="stars"></span>  <!--звезды рейтинга!-->
+            <span class="hotel-raiting">рейтинг: 8,5</span>
+          </div>
         </div>
         <div>
-          <img src="Desert.jpg" alt="Desert Quail INN">
-          <p class="hotel-name">Desert Quail INN </p>
-          <span class="hotel-type">мотель </span>
-          <span class="hotel-price">от 3000 Р. </span>
-          <a href="#Desert.html" class="info-button">подробнее</a>
-          <span class="reserv-button">забронировать</span>
-          <span class="stars"></span> <!--звезды рейтинга!-->
-          <span class="hotel-raiting">рейтинг: 8,9</span>
+          <div>
+            <div><img src="Desert.jpg" width="100" height="100" alt="Desert Quail INN"></div>
+            <div><p class="hotel-name">Desert Quail INN </p>
+             <span class="hotel-type">мотель </span>
+             <span class="hotel-price">от 3000 Р. </span>
+             <a href="#Desert.html" class="info-button">подробнее</a>
+             <span class="reserv-button">забронировать</span>
+            </div>
+          </div>
+          <div>
+            <span class="stars"></span> <!--звезды рейтинга!-->
+            <span class="hotel-raiting">рейтинг: 8,9</span>
+          </div>
         </div>
         <div>
-          <img src="villas.jpg" alt="Villas at Poco Diablo">
-          <p class="hotel-name">Villas at Poco Diablo</p>
-          <span class="hotel-type">апартаменты </span>
-          <span class="hotel-price">от 2000 Р. </span>
-          <a href="#villas.html" class="info-button">подробнее</a>
-          <span class="reserv-button">забронировать</span>
-          <span class="stars"></span> <!--звезды рейтинга!-->
-          <span class="hotel-raiting">рейтинг: 9,2</span>
+          <div>
+            <div><img src="villas.jpg" width="100" height="100" alt="Villas at Poco Diablo"></div>
+            <div>
+             <p class="hotel-name">Villas at Poco Diablo</p>
+             <span class="hotel-type">апартаменты </span>
+             <span class="hotel-price">от 2000 Р. </span>
+             <a href="#villas.html" class="info-button">подробнее</a>
+             <span class="reserv-button">забронировать</span>              
+            </div>
+          </div>
+          <div>
+            <span class="stars"></span> <!--звезды рейтинга!-->
+            <span class="hotel-raiting">рейтинг: 9,2</span>
+          </div>
         </div>
       </section>
     </main>
@@ -96,7 +122,7 @@
           <li><a class="social-button" href="#youtube">youtube</a></li>
         </ul>
         <a class="developer" href="https://htmlacademy.ru/">
-          website by <img src="img/footer-logo.svg" alt="htmlacademy">
+          website by <img src="img/footer-logo.svg" width="20" height="20"alt="htmlacademy">
         </a>
 
     </footer>
