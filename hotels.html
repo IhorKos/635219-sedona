@@ -3,6 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="css/normalize.css" rel="stylesheet">
     </head>
     <body>
   	    <header class="main-header">
@@ -24,7 +29,8 @@
         <h2 class="visual-hidden"> Фильтр поиска жилья </h3>
             <form action="https://echo.htmlacademy.ru" method="get">          
                 <!--<div class="background-image-2">
-                <img src="img/background-image-2.jpg" width="1200" height="562" alt="фон фильтра"></div>!--> 
+                <img src="img/background-image-2.jpg" width="1200" height="562" alt="фон фильтра"></div>!-->
+                <h3>Инфраструктура</h3> 
                 <ul class="infrastructure-list">
                     <li class="infrastructure-item">
                         <label for="pool"> бассейн </label> 
@@ -39,6 +45,7 @@
                         <input type="checkbox" name="WI-FI" id="WI-FI">
                     </li>
                 </ul>
+                <h3>Тип жилья</h3>
                 <ul class="accommodation-list">  
                     <li class="accommodation-item">
                         <label for="hotel"> гостиница </label>
@@ -54,7 +61,9 @@
                     </li>
                 </ul>
                 <div class="price filter">
-                    <label for="price">стоимость в сутки (Р):</label>
+                    <label for="price"> 
+                        <h3>стоимость в сутки (Р):</h3>
+                    </label>
                     <input type="range" name="price" id="pricer" min="0" max="3000" step="1">
                     <output name="pricer"></output>
     

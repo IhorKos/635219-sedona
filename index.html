@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
   	<header class="main-header">
@@ -23,7 +26,7 @@
 
         <div class="main-img"><img src="img/intro.jpg" alt="main img" width="1200" height="508"></div>
 
-        <section class="features-titile">
+        <section class="features-title">
             <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньйон!</p>
         </section>
@@ -40,17 +43,17 @@
         <section class="features-icons">
             <div>
                 <div><span class="features-icon"></span></div>
-                <div>жилье</div>
-                <p>рекомедуем пожить в настоящем мотеле, все ка в кино!</p>
+                <h2>жилье</h2>
+                <p>рекомедуем пожить в настоящем мотеле, все как в кино!</p>
             </div>
             <div>
                 <div><span class="features-icon"></span></div>
-                <div>еда</div>
+                <h2>еда</h2>
                 <p>всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
             </div>
             <div>
                 <div><span class="features-icon"></span></div>
-                <div>сувениры</div>
+                <h2>сувениры</h2>
                 <p>не только китайского, но и местного производства!</p>
             </div>
         </section>
@@ -67,17 +70,17 @@
         <section class="features-other">
             <div>
                 <h2>Небольшая площадь</h2>
-                <div><span class="features-icon">№3</span></div>                
+                <div><span class="features-icon">№3</span></div>
                 <p>все достопримечательности находятся очень близко</p>
             </div>
             <div>
                 <h2>Красивая дорога</h2>
-                <div><span class="features-icon">№4</span></div>                
+                <div><span class="features-icon">№4</span></div>
                 <p>ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
             <div>
                 <h2>Мало туристов</h2>
-                <div><span class="features-icon">№5</span></div>                
+                <div><span class="features-icon">№5</span></div>
                 <p>большинство едет в Гранд Каньйон и толпится там</p>
             </div>
         </section>
@@ -88,8 +91,10 @@
         </section>
 
         <div class="form-holder">
-            <button>поиск гостиницы в Седоне</button>
-            <form>
+            <div>
+                <button>поиск гостиницы в Седоне</button>
+            </div>    
+            <form action="https://echo.htmlacademy.ru" method="get">  
                 <div>
                     <label for="arrival-date">дата заезда</label>
                     <input type="date" name="arrival-date">
@@ -117,7 +122,7 @@
                             <button type="button">-</button>
                         </div>
                     </div>
-                    <button type="button">найти</button>
+                    <button class="blue" type="button">найти</button>
                 </div>
             </form>
         </div>

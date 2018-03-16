@@ -1,0 +1,102 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14 px;
+	font-weight: 400;
+	text-transform: uppercase;
+	width: 1200px; /* не уверен нужно ли задавать этот параметр? (в примере Барбершопа не было, а без фиксированной ширины все плывет) */
+}
+a {
+  text-decoration: none;
+}
+.main-navigation {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+}
+.site-navigation a:hover,
+.user-navigation a:hover {
+  color: #81b3d2;
+}
+.site-navigation a:focus,
+.user-navigation a:focus {
+  color: #b2b2b2;
+} 
+.site-navigation a:active,
+.user-navigation a:active {
+  color: #b2b2b2;
+}
+.features-title,
+.features-item {
+  list-style: none;
+}
+.features-title {
+  text-align: center; 
+}
+
+.features-title h1, {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.features-title p {
+  font-size: 14px;
+  line-height: 26px; /* не уверен что правильно задаю этот параметр */
+}
+.features-item {
+  color: #ffffff;
+
+  background-color: #81b3d2;
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+.features-item-descrip h2 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.features-icons h2 {/* изначально на этом классе у меня были заголовки 3го уровня, но почему-то жирность не увечивалась при таких жа параметрах... */
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;  
+}
+.features-other {
+  background-color:#eeeeee;	
+}
+button {            /* здесь нужна помощ */
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #81b3d2; /*#766357*/
+  border: none;
+}
+.button:hover,             
+.button:focus {
+  background-color: color= #604e43; /* не работает(( */
+}
+.button:active { 
+  background-color: color= #503e33;    /* не работает(( */
+}
+.form-holder input {
+  font: inherit;
+  background-color: #f2f2f2;
+}
+.form-holder input:hover {
+  background-color: #ebebeb;
+  /*border-color: #663d15;*/
+}
+.form-holder input:focus {
+  background-color: #ffffff;
+  border-color: #ebebeb;       /* ???? */
+}
