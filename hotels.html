@@ -10,24 +10,26 @@
         <link href="css/normalize.css" rel="stylesheet">
     </head>
     <body>
-  	    <header class="main-header">
-  		    <nav class="main-navigation">
-  		        <a class="main-navigation-logo" href="index.html">
-  			       <img src="img/index-logo.svg " width="100" height="100" alt="Логотип Седоны">
-  		        </a>
-  		        <ul class="site-navigation">
-  			        <li> <a href="info.html"> информация</a></li>
-  			        <li> <a href="photo_and_video.html"> фото и видео</a></li>
-  			        <li> <a href="map.html"> карта штата</a></li>
-  			        <li> <a href="hotels.html"> гостиницы</a></li>	
-  		        </ul> 
-  		    </nav>
-  	    </header>
-
+  	    
         <main class="container">
+
+        <header class="main-header">
+            <nav class="main-navigation">
+                <a class="main-navigation-logo" href="index.html">
+                   <img src="img/index-logo.png" width="138" height="70" alt="Логотип Седоны">
+                </a>
+                <ul class="site-navigation">
+                    <li> <a href="info.html"> информация</a></li>
+                    <li> <a href="photo_and_video.html"> фото и видео</a></li>
+                    <li> <a href="map.html"> карта штата</a></li>
+                    <li> <a href="hotels.html"> гостиницы</a></li>  
+                </ul> 
+            </nav>
+        </header>
+
         <section class="hotel-filter">
         <h2 class="visual-hidden"> Фильтр поиска жилья </h3>
-            <form action="https://echo.htmlacademy.ru" method="get">          
+            <form class="hotel-filter1" action="https://echo.htmlacademy.ru" method="get">          
                 <!--<div class="background-image-2">
                 <img src="img/background-image-2.jpg" width="1200" height="562" alt="фон фильтра"></div>!-->
                 <h3>Инфраструктура</h3> 
@@ -65,8 +67,7 @@
                         <h3>стоимость в сутки (Р):</h3>
                     </label>
                     <input type="range" name="price" id="pricer" min="0" max="3000" step="1">
-                    <output name="pricer"></output>
-    
+                    <span></span>
                     <button type="submit">показать</button>            
                 </div>
             </form>
@@ -94,7 +95,7 @@
                     <div><p class="hotel-name">Amara Resort & SPA</p>
                         <span class="hotel-type">гостинница </span>
                         <span class="hotel-price">от 4000 Р. </span>
-                        <a href="#amara.html" class="info-button">подробнее</a>
+                        <a href="#amara.html" class="info-button blue">подробнее</a>
                         <span class="reserv-button">забронировать</span> 
                     </div>
                 </div>
@@ -114,7 +115,7 @@
                     <div><p class="hotel-name">Desert Quail INN </p>
                         <span class="hotel-type">мотель </span>
                         <span class="hotel-price">от 3000 Р. </span>
-                        <a href="#Desert.html" class="info-button">подробнее</a>
+                        <a href="#Desert.html" class="info-button blue">подробнее</a>
                         <span class="reserv-button">забронировать</span>
                     </div>
                 </div>
@@ -135,7 +136,7 @@
                         <p class="hotel-name">Villas at Poco Diablo</p>
                         <span class="hotel-type">апартаменты </span>
                         <span class="hotel-price">от 2000 Р. </span>
-                        <a href="#villas.html" class="info-button">подробнее</a>
+                        <a href="#villas.html" class="info-button blue">подробнее</a>
                         <span class="reserv-button">забронировать</span>              
                     </div>
                </div>
@@ -154,13 +155,13 @@
         <a class="footer-hashtag" href="#visitsedona"> #visitsedona </a>
         <ul class="footer-social">
             <li>
-                <a class="social-button" href="#twitter"><img src="img/twitter.svg" width="50" height="50" alt="twitter"></a>
+                <a class="social-button" href="#twitter"><img src="img/twitter.svg"  alt="twitter"></a>
             </li>
             <li>
-                <a class="social-button" href="#facebook"><img src="img/facebook.svg" width="50" height="50" alt="facebook"></a>
+                <a class="social-button" href="#facebook"><img src="img/facebook.svg" width="46" height="48" alt="facebook"></a>
             </li>
             <li>
-                <a class="social-button" href="#youtube"><img src="img/youtube.svg" width="50" height="50" alt="youtube"></a>
+                <a class="social-button" href="#youtube"><img src="img/youtube.svg" width="46" height="48" alt="youtube"></a>
             </li>
         </ul>
         <span>WEBSITE BY</span>

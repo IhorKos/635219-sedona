@@ -1,11 +1,16 @@
 body {
-	margin: 0;
 	padding: 0;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', 'Arial', sans-serif;
 	font-size: 14 px;
 	font-weight: 400;
 	text-transform: uppercase;
-	width: 1200px; /* не уверен нужно ли задавать этот параметр? (в примере Барбершопа не было, а без фиксированной ширины все плывет) */
+	}
+
+.container, .main-navigation {
+	width: 1200px;
+	text-align: center;
+	position: relative;
+
 }
 a {
   text-decoration: none;
@@ -72,7 +77,7 @@ a {
 .features-other {
   background-color:#eeeeee;	
 }
-button {            /* здесь нужна помощ */
+button {            
   font: inherit;
   text-align: center;
   color: #ffffff;
@@ -81,13 +86,29 @@ button {            /* здесь нужна помощ */
   background-color: #81b3d2; /*#766357*/
   border: none;
 }
-.button:hover,             
-.button:focus {
-  background-color: color= #604e43; /* не работает(( */
+button:hover,             
+button:focus {
+  background-color: 604e43; 
 }
-.button:active { 
-  background-color: color= #503e33;    /* не работает(( */
+button:active { 
+  background-color: 503e33;    
 }
+
+
+.holder-button {
+	position: absolute;
+	width: 568px;
+    height: 86px;
+    background-color: #766357;
+    font-size: 21px;
+    text-transform: uppercase;
+
+}
+
+
+
+
+
 .form-holder input {
   font: inherit;
   background-color: #f2f2f2;
@@ -99,4 +120,15 @@ button {            /* здесь нужна помощ */
 .form-holder input:focus {
   background-color: #ffffff;
   border-color: #ebebeb;       /* ???? */
+}
+.social-button {
+	background-color: #81b3d2; 
+	width:46px ; 
+	height:48px;
+}
+
+
+
+.hotel-filter1 {
+	background-image: url(img/background-image-2.jpg); 
 }
