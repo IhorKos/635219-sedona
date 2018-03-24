@@ -12,57 +12,57 @@
     <body>
   	    
         <main class="container">
-
         <header class="main-header">
             <nav class="main-navigation">
-                <a class="main-navigation-logo" href="index.html">
-                   <img src="img/index-logo.png" width="138" height="70" alt="Логотип Седоны">
-                </a>
+            
                 <ul class="site-navigation">
-                    <li> <a href="info.html"> информация</a></li>
+                     <li> <a href="info.html"> информация</a></li>
                     <li> <a href="photo_and_video.html"> фото и видео</a></li>
+                    <li> <a class="main-navigation-logo" href="index.html">
+                         <img src="img/index-logo.png" width="138" height="70" alt="Логотип Седоны">                                      <!-- добавил логотип Седоны в список!-->
+                    </a></li>
                     <li> <a href="map.html"> карта штата</a></li>
-                    <li> <a href="hotels.html"> гостиницы</a></li>  
-                </ul> 
+                    <li> <a href="hotels.html"> гостиницы</a></li>
+                 </ul>
             </nav>
         </header>
 
         <section class="hotel-filter">
-        <h2 class="visual-hidden"> Фильтр поиска жилья </h3>
-            <form class="hotel-filter1" action="https://echo.htmlacademy.ru" method="get">          
-                <!--<div class="background-image-2">
-                <img src="img/background-image-2.jpg" width="1200" height="562" alt="фон фильтра"></div>!-->
-                <h3>Инфраструктура</h3> 
-                <ul class="infrastructure-list">
-                    <li class="infrastructure-item">
-                        <label for="pool"> бассейн </label> 
-                        <input type="checkbox" name="pool" id="pool">
-                    </li>
-                    <li class="infrastructure-item">  
-                        <label for="parking"> парковка </label>
-                        <input type="checkbox" name="parking" id="parking">
-                    </li>
-                    <li class="infrastructure-item">
-                        <label for="WI-FI"> WI-FI </label>
-                        <input type="checkbox" name="WI-FI" id="WI-FI">
-                    </li>
-                </ul>
-                <h3>Тип жилья</h3>
-                <ul class="accommodation-list">  
-                    <li class="accommodation-item">
-                        <label for="hotel"> гостиница </label>
-                        <input type="checkbox" name="hotel" id="hotel">   
-                    </li>
-                    <li class="accommodation-item">
-                        <label for="motel"> мотель </label>
-                        <input type="checkbox" name="motel" id="motel">
-                    </li>
-                    <li class="accommodation-item">
-                        <label for="apartments"> апартаменты </label>
-                        <input type="checkbox" name="apartments" id="apartments">
-                    </li>
-                </ul>
-                <div class="price filter">
+        <h2 class="visually-hidden"> Фильтр поиска жилья </h3>
+            <form class="hotel-filter" action="https://echo.htmlacademy.ru" method="get">    
+                <div class="checkbox-filter">
+                    <h3>Инфраструктура</h3> 
+                    <ul class="infrastructure-list">
+                        <li class="infrastructure-item">                        
+                            <input type="checkbox" name="pool" id="pool">
+                            <label for="pool"> бассейн </label> 
+                        </li>
+                        <li class="infrastructure-item">                        
+                            <input type="checkbox" name="parking" id="parking">
+                            <label for="parking"> парковка </label>
+                        </li>
+                        <li class="infrastructure-item">                        
+                            <input type="checkbox" name="WI-FI" id="WI-FI">
+                            <label for="WI-FI"> WI-FI </label>
+                     </li>
+                    </ul>
+                    <h3>Тип жилья</h3>
+                    <ul class="accommodation-list">  
+                     <li class="accommodation-item">                        
+                         <input type="checkbox" name="hotel" id="hotel">
+                         <label for="hotel"> гостиница </label>   
+                     </li>
+                     <li class="accommodation-item">                        
+                          <input type="checkbox" name="motel" id="motel">
+                           <label for="motel"> мотель </label>
+                     </li>
+                     <li class="accommodation-item">                        
+                          <input type="checkbox" name="apartments" id="apartments">
+                          <label for="apartments"> апартаменты </label>
+                     </li>
+                    </ul>
+                </div>
+                <div class="price-filter">
                     <label for="price"> 
                         <h3>стоимость в сутки (Р):</h3>
                     </label>
@@ -74,7 +74,7 @@
         </section>
 
         <section class="sorting">
-            <!--<h3 class="visual-hidden"> Типы сортировки </h3> !-->
+            <h3 class="visually-hidden"> Типы сортировки </h3> 
             <p>найдено:3</p>
             <ul class="sorting-list">сортировка:</p>
                 <li class="sorting-item">по цене</li>
@@ -85,7 +85,7 @@
         </section>
 
         <section class="hotel-cards">
-            <h2 class="visual-hidden"> Карточки отелей </h3> 
+            <h2 class="visually-hidden"> Карточки отелей </h3> 
                 
             <div>
                 <div>
@@ -149,26 +149,30 @@
             </div>
 
         </section>
-        </main>
+        
 
         <footer class="footer">
-        <a class="footer-hashtag" href="#visitsedona"> #visitsedona </a>
-        <ul class="footer-social">
-            <li>
-                <a class="social-button" href="#twitter"><img src="img/twitter.svg"  alt="twitter"></a>
-            </li>
-            <li>
-                <a class="social-button" href="#facebook"><img src="img/facebook.svg" width="46" height="48" alt="facebook"></a>
-            </li>
-            <li>
-                <a class="social-button" href="#youtube"><img src="img/youtube.svg" width="46" height="48" alt="youtube"></a>
-            </li>
-        </ul>
-        <span>WEBSITE BY</span>
-        <a class="developer" href="https://htmlacademy.ru/">
-            <img src="img/logo-htmlacademy.svg" width="100" height="100" alt="htmlacademy">
-        </a>
+            <a class="footer-hashtag" href="#visitsedona"> #visitsedona </a>
+            <ul class="footer-social">
+                <li>
+                    <a class="social-button" href="#twitter"><img src="img/twitter.svg" width="20" height="20" alt="twitter"></a>
+                </li>
+                <li>
+                    <a class="social-button" href="#facebook"><img src="img/fb-icon.svg" width="15" height="20" alt="facebook"></a>
+                </li>
+                <li>
+                    <a class="social-button" href="#youtube"><img src="img/youtube.svg" width="22" height="15" alt="youtube"></a>
+                </li>
+            </ul>
+            <span>WEBSITE BY
+                <a class="developer" href="https://htmlacademy.ru/">
+                    <img src="img/logo-htmlacademy.svg" width="100" height="100" alt="htmlacademy"  >
+                </a>
+            </span>
         </footer>
+
+        </main>
+
 
     </body>
 </html>    
