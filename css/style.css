@@ -12,42 +12,44 @@ body {
 	text-align: center;
 	position: relative;
   margin: 0 auto;
+  margin-top: 0;
 }
 
 .main-navigation {
   font-size: 14px;
   line-height: 20px;
   color: #000000;
+  
 
 }
 li {
-    list-style-type: none; /* Убираем маркеры */
+    list-style-type: none; 
 }
 ul {
-    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    margin-left: 0; 
     padding-left: 0;
 }
 a { 
-    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+    text-decoration: none; 
    } 
 .site-navigation,
 .user-navigation {
   list-style: none;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  margin: 0;
 }
 .site-navigation{
 	position: relative;
-	height: 65px;
+	height: 56px;
 	font-weight: 700;
 
-}
-.main-img {
-	margin-top: -18px;  /*не точные размеры !!!*/
 }
 .main-navigation-logo{
 	position: absolute;
 	right: 532px;
+  margin-top:  -28px;
 
 }
 .features-item-descrip{
@@ -154,7 +156,13 @@ button:active {
   text-transform: uppercase;
   cursor: pointer;
 }
-
+.search-button:hover {
+  background-color: #604e43;
+}
+.search-button:active {
+  color:  #857871;
+  background-color: #503e33;
+}
 .form-holder {
   position: relative;
   background-color: transparent;
@@ -177,10 +185,11 @@ button:active {
   flex-direction: column;
   justify-content: space-around;
   font-weight: 700;
+  display: none;
   
 }
-.modal-show {
-  display: none;
+.search-form-active {
+  display: block;
 }
 
 .hotel-search h2 {
@@ -195,35 +204,106 @@ button:active {
   margin-bottom: 10px;
 
 }
-.form-holder input:hover {
-  background-color: #ebebeb;
-  /*border-color: #663d15;*/
-  display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 33.3%;
-    padding-top: 45px;
-}
 .form-holder input:focus {
   background-color: #ffffff;
   border-color: #ebebeb;  
        /* ???? */
 }
 .form-holder-img{
+  position: absolute;
+  top: 8px;
+  right: 11px;
+  display: inline-block;
+  border: 0;
   background-color: transparent;
-}
-.search-container{
-  display: flex;
-  flex-direction: row;
+  fill:#cacaca;
+  margin:0;
+  padding: 0;
 }
 
+.form-holder-img:hover{
+    fill:#000000;
+}
+.form-holder-img:active{
+    fill:#81b3d2;
+}
+
+
+.search-container{
+   margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+  margin-top: 9px;
+  position: relative;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 465px;
+}
+.search-container input {
+ position: relative;
+  box-sizing: border-box;
+  width: 346px;
+  padding-top: 8px;
+  padding-left: 9px;
+  padding-bottom: 8px;
+  padding-right: 38px;
+  font: inherit;
+  text-transform: uppercase;
+  border: none;
+  background-color: #f2f2f2;
+  color: #000000;
+} 
+.input-calendar{
+  position: relative;
+  padding: 20px;
+  display: block;
+  display: flex;
+  justify-content: space-between;
+}
+input.input-calendar[type="text"] {
+  width: 281px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding: 4px 40px 4px 15px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "PT Sans","Arial",sans-serif;
+  color: #000;
+  text-transform: uppercase;
+  background: #f2f2f2;
+  border: 2px solid #f2f2f2;
+  outline: none;
+}
+input.input-calendar:hover, 
+input.input-calendar-select:hover {
+  background: #ebebeb;
+  border: 2px solid #ebebeb;
+}
+input.adults[type="text"],
+input.child[type="text"] {
+  position: relative;
+  width:  114px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "PT Sans","Arial",sans-serif;
+  color: #000;
+  text-transform: uppercase;
+  background: #f2f2f2;
+  border: 2px solid #f2f2f2;
+  outline: none;
+
+}
 .button-back-next:hover svg line {
   stroke: #000; 
 }
 .button-back-next:active svg line {
   stroke: #81b3d2; 
 }
+
 .show-search{
   width: 495px;
   height: 59px;
@@ -253,8 +333,9 @@ button:active {
 	justify-content: space-around;
   align-items: center;
   min-height: 121px;
-  background-color: rgba(254,254,254,.9);
-	
+  position:relative;
+  z-index: 10;
+  background-color:rgba(254,254,254,.9)	;
 }
 .footer-hashtag {
   font-weight: 700;
@@ -291,7 +372,7 @@ button:active {
   background-color: #669ec0;
 }
 .social-button:active {
-  color: #81b3d2;     /*как сделать темное заполнения иконок при нажатии???*/
+  color: #81b3d2;     
   background-color: #5496bd; 
 }
 .developer-span{
@@ -317,13 +398,13 @@ button:active {
 
 .hotel-filter-search {
 	background-color: #5581aa;
-  background-image: url("../img/background-image-2.jpg"); 
+  background-image: url("../img/background-image-2.jpg");
+ 
 	display: flex;
   justify-content: space-between;
   min-height: 217px;
   color: #ffffff;
-  font-weight: 700;
-  margin-top: -18px;
+  font-weight: 400;
   text-align: left;
 	}
 
@@ -334,13 +415,23 @@ button:active {
 .checkbox-filter {
 	display: flex;
   align-items: center;
-  margin: 30px 72px; 
-  width: 30%;
-
-
+  margin: 0px 72px; 
+  width: 255px;
+  box-sizing: border-box;
+  padding-top: 28px: 
+ 
+}
+.checkbox-filter ul{
+   width: 186px;
 }
 
-
+.infrastructure-list,
+.accommodation-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 160px;
+}
 
 
 
@@ -349,8 +440,8 @@ button:active {
 .accommodation-list ul {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  min-height: 217px;
+  justify-content: space-around; ;
+  min-height: 115px;
   
 }
 .accommodation-list{
@@ -359,9 +450,28 @@ button:active {
 
 
 
+
+
+.hotel-filter input[type="checkbox"]:checked+label:before {
+    background-image: url("../img/checkbox-on.svg")no-repeat;
+}
+.hotel-filter input[type="checkbox"]+label:hover:before {
+    opacity: 1;
+}
+.hotel-filter input[type="checkbox"]+label:before {
+    background-image: url("../img/checkbox-off.svg")no-repeat;
+    /*content: "\2610";*/
+    display: inline-block;
+    width: 40px;
+    font-size: 24px;
+    font-family: "symbols-sedona";
+    vertical-align: middle;
+    color: #fff;
+    opacity: .7;
+}
 .filter-range {
   width: 330px;
-  margin: 50px auto; 
+  margin: 29px 73px; 
 
   color: #ffffff;
   text-transform: uppercase;
@@ -379,9 +489,7 @@ button:active {
   
   height: 36px;
   margin-bottom: 20px;
-
   font-size: 0;
-
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
